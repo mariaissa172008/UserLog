@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "816004147715",
+    "project_id": "userlog123-55273",
+    "storage_bucket": "userlog123-55273.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816004147715:android:ef8facbafe2dde02d4bc36",
+        "android_client_info": {
+          "package_name": "com.example.userlog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx3DshalC6Yco0SvvrzqslR8lmlbhCsPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
