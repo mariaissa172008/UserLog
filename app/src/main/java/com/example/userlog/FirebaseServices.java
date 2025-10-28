@@ -1,6 +1,7 @@
 package com.example.userlog;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 
 public class FirebaseServices
@@ -13,7 +14,27 @@ public class FirebaseServices
 
     public FirebaseServices() {
         auth = FirebaseAuth.getInstance();
-        fire = FirebaseFireStore.getInstance();
+        fire = FirebaseFirestore.getInstance();
+        storage = FirebaseStorage.getInstance();
+
+    }
+    public FirebaseStorage getStorage() {
+        return storage;
+    }
+
+    public FirebaseFirestore getFire() {
+        return fire;
+    }
+
+    public FirebaseAuth getAuth() {
+        return auth;
+    }
+
+    public static FirebaseServices getInstance(){
+        if (instance == null) {
+            instance = new FirebaseServices();
+        }
+        return  instance;
     }
 
 
